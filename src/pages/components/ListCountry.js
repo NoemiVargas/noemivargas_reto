@@ -19,8 +19,7 @@ query findCountryByCode($codeToSearch: ID! ){
 `;
 
 
-function ListCountry() {
-
+function ListCountry({ countryList }) {
   const [page, setPage] = React.useState(1);
   const handleChange = (event, value) => {
     setPage(value);
@@ -29,22 +28,14 @@ function ListCountry() {
   const [showDetail, setShowDetail] = useState(false);
 
   const [country, setCountry] = useState(null);
-  const [getCountry, result] = useLazyQuery(GET_COUNTRY);
 
+  //Para buscar pais
+  const [getCountry, 
+    { called: calledGetCountry, loading: loadingGetCountry, data: dataCountry }] = useLazyQuery(GET_COUNTRY);
   const showCountry = (code) => {
     getCountry({ variables: { codeToSearch: code } });
+    console.log("showCountry", code)
   };
-
-  const onClickCountry = (code) => {
-    showCountry(code);
-    setShowDetail(!showDetail);
-  };
-
-  useEffect(() => {
-    if (result.data) {
-      setCountry(result.data.country);
-    }
-  }, [result]);
 
   const GET_LIST_COUNTRY = gql`
     query {
@@ -58,19 +49,58 @@ function ListCountry() {
     }
   `;
 
+  // const [getAllCountries, 
+  //   { called: calledAllCountries, loading: loadingAllCountries, data: dataAllCountries }] = useLazyQuery(GET_LIST_COUNTRY);
+
   const { data, loading, error } = useQuery(GET_LIST_COUNTRY);
 
   return (
     <>
       {loading && <p>Cargando...</p>}
-      {error && <p>Error : {error.message}</p>}
-      {data &&
+      {/* {error && <p>Error : {error.message}</p>} */}
+      {(data && countryList.length == 0) &&
         (
           <div className="row g-0">
             <div className="col-sm" style={{ backgroundColor: "#E3F4FF", paddingLeft: '2rem' }}>
               <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', rowGap: '2rem' }}>
                 {
                   data.countries.map(
+                    ({ code, name, continent: { name: continentName } }, index) => (
+                      <Card
+                        key={index}
+                        countryCode={code}
+                        countryName={name}
+                        continentName={continentName}
+                        onClick={(e) => {
+                          showCountry(code);
+                          setShowDetail(!showDetail);
+
+                        }}
+                        selectedDetail={showDetail} />
+                    )
+                  )
+                }
+
+
+              </div>
+            </div>
+            {dataCountry && (
+              <MDBCollapse className="col-4" show={showDetail} style={{ display: (showDetail) ? 'block' : 'none' }}>
+                <InfoCard country={dataCountry.country}></InfoCard>
+              </MDBCollapse>
+            )}
+
+          </div>
+        )
+      }
+
+      {(countryList.length > 0) &&
+        (
+          <div className="row g-0">
+            <div className="col-sm" style={{ backgroundColor: "#E3F4FF", paddingLeft: '2rem' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', rowGap: '2rem' }}>
+                {
+                  countryList.map(
                     ({ code, name, continent: { name: continentName } }, index) => (
                       <Card
                         key={index}
@@ -89,9 +119,9 @@ function ListCountry() {
 
               </div>
             </div>
-            {country && (
+            {dataCountry && (
               <MDBCollapse className="col-4" show={showDetail} style={{ display: (showDetail) ? 'block' : 'none' }}>
-                <InfoCard country={country}></InfoCard>
+                <InfoCard country={dataCountry.country}></InfoCard>
               </MDBCollapse>
             )}
 
@@ -99,7 +129,7 @@ function ListCountry() {
         )
 
 
-      }
+      } 
     </>
   );
 }
