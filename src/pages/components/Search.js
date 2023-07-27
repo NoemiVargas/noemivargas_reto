@@ -75,7 +75,7 @@ function Search({ onChooseCountry, onChooseContinent }) {
   return (
     <>
       <div
-        className="d-flex justify-content-center align-items-center"
+        className="buscaN d-flex justify-content-center align-items-center"
         style={{
           backgroundColor: "#FFFFFF",
           padding: "10px 20px",

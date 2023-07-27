@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/noemivargas_reto/static/css/main.20e2ad36.css",
-    "main.js": "/noemivargas_reto/static/js/main.f734c92b.js",
+    "main.css": "/noemivargas_reto/static/css/main.68a020b2.css",
+    "main.js": "/noemivargas_reto/static/js/main.4c6e7e26.js",
     "static/js/787.aa49c090.chunk.js": "/noemivargas_reto/static/js/787.aa49c090.chunk.js",
     "static/media/fa-solid-900.ttf": "/noemivargas_reto/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/noemivargas_reto/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
@@ -13,12 +13,12 @@
     "static/media/fa-v4compatibility.ttf": "/noemivargas_reto/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/noemivargas_reto/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/noemivargas_reto/index.html",
-    "main.20e2ad36.css.map": "/noemivargas_reto/static/css/main.20e2ad36.css.map",
-    "main.f734c92b.js.map": "/noemivargas_reto/static/js/main.f734c92b.js.map",
+    "main.68a020b2.css.map": "/noemivargas_reto/static/css/main.68a020b2.css.map",
+    "main.4c6e7e26.js.map": "/noemivargas_reto/static/js/main.4c6e7e26.js.map",
     "787.aa49c090.chunk.js.map": "/noemivargas_reto/static/js/787.aa49c090.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20e2ad36.css",
-    "static/js/main.f734c92b.js"
+    "static/css/main.68a020b2.css",
+    "static/js/main.4c6e7e26.js"
   ]
 }
