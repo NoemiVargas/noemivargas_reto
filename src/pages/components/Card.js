@@ -1,9 +1,12 @@
 import React from "react";
 import "../../css/Card.css";
 
-function Card({ countryCode, countryName, continentName }) {
+function Card({ onClick, countryCode, countryName, continentName, selectedDetail }) {
   return (
-    <div style={{ width: "45%" }}>
+    <div style={{ width: selectedDetail ? '45%':'30%' }} onClick={(e) => {
+      e.stopPropagation();
+      onClick();
+    }}>
       <div
         className="card"
         style={{
