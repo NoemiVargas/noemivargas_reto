@@ -1,0 +1,24 @@
+/* *{
+    background-color: aqua;
+} */
+
+.fondoActivo {
+    color: #676767;
+    font-weight: bold;
+    background-color :#FFFFFF;
+    text-transform: capitalize !important;
+}
+
+.nav-item-normal{
+    color: white !important;
+    font-weight: bold !important;
+    text-transform: capitalize !important;
+}
+
+.nav-item-selected{
+    margin: 0px !important;
+    font-weight: bold !important;
+    font-size: 17px !important;
+    padding-left: 21px !important;
+    text-transform: capitalize !important;
+}

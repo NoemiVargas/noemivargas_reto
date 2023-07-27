@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  background-color: aqua;
+}
+
+
+@font-face {
+  font-family: 'Uni Neue';
+  src: url(/public/plugins/fuentes/uni-neue-bold.otf);
+}
+
+p{
+  font-family: 'Uni Neue';
+}
+span{
+  font-family: 'Uni Neue';
+
+}
