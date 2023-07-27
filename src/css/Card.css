@@ -6,3 +6,21 @@
 .secondary-title {
     color: #7A7A7A;
 }
+
+ @media(max-width: 880px) {
+    .eachCard{
+        width: 85%!important; 
+    }
+  }
+
+  @media(max-width: 705px) {
+    .eachCard{
+        width: 77%!important; 
+    }
+  }
+
+  @media(max-width: 280px) {
+    .bandera img{
+      width: 40% !important;
+  }
+  }

@@ -1,7 +1,3 @@
-/* *{
-    background-color: aqua;
-} */
-
 .fondoActivo {
     color: #676767;
     font-weight: bold;
@@ -22,3 +18,14 @@
     padding-left: 21px !important;
     text-transform: capitalize !important;
 }
+
+/*---*/
+@media(max-width: 412px) {
+    span{
+        width: 2.3rem;
+    }
+    li{
+        margin-left: -70%;
+        width: 10%;
+    }
+  }

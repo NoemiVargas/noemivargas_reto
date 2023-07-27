@@ -1,0 +1,24 @@
+@media(max-width: 800px) {
+    .col-4{
+      width:50%!important; 
+    }
+  }
+
+  @media(max-width: 705px) {
+    .col-4{
+      width:50%!important; 
+    }
+  }
+
+  @media(max-width: 655px) {
+    .boxInfo ul li{
+       margin-left: 0%; 
+       width: 100%;
+    }
+    .col-4{
+      margin: 0 auto;
+    }
+    .InfoBody{
+      width: 145%;
+    }
+  }

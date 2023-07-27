@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../../css/InfoCard.css";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
 
 const GET_COUNTRY = gql`
@@ -19,7 +20,7 @@ function InfoCard({ country }) {
 
   return (
     <div>
-      <div className="card" style={{ borderRadius: '0rem' }}>
+      <div className="card InfoBody" style={{ borderRadius: '0rem' }}>
         <div className="card-body">
           <div className="">
             <div
@@ -81,7 +82,7 @@ function InfoCard({ country }) {
           </div>
 
           {country.states.length > 0 && (
-            <div style={{ boxShadow: '0px 0px 10px rgba(0,0,0,0.4)' }}>
+            <div className="boxInfo" style={{ boxShadow: '0px 0px 10px rgba(0,0,0,0.4)' }}>
               <ul style={{ listStyle: 'none', padding: '0.8rem' }}>
 
                 {

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useQuery, gql } from "@apollo/client";
 import { Autocomplete, CircularProgress, TextField } from "@mui/material";
+import "../../css/Search.css";
 
 const GET_LIST_COUNTRY_SELECT = gql`
 query {
@@ -29,7 +30,7 @@ function Search({onChooseCountry}) {
 
   return (
     <div
-      className="d-flex justify-content-center align-items-center"
+      className="d-flex justify-content-center align-items-center buscaN"
       style={{
         backgroundColor: "#FFFFFF",
         padding: "10px 20px",

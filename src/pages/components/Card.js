@@ -3,7 +3,7 @@ import "../../css/Card.css";
 
 function Card({ onClick, countryCode, countryName, continentName, selectedDetail }) {
   return (
-    <div style={{ width: selectedDetail ? '45%':'30%' }} onClick={(e) => {
+    <div className="eachCard" style={{ width: selectedDetail ? '45%':'30%' }} onClick={(e) => {
       e.stopPropagation();
       onClick();
     }}>
@@ -34,7 +34,7 @@ function Card({ onClick, countryCode, countryName, continentName, selectedDetail
         </div>
         <div style={{ padding: "0.6rem" }}>
           <div className="d-flex align-items-center">
-            <div>
+            <div className="bandera">
               <img
                 src={`https://flagcdn.com/w80/${countryCode.toLowerCase()}.png`}
                 alt={countryName}
