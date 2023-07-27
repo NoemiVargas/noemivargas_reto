@@ -49,18 +49,14 @@ function ListCountry({ countryList }) {
     }
   `;
 
-  // const [getAllCountries, 
-  //   { called: calledAllCountries, loading: loadingAllCountries, data: dataAllCountries }] = useLazyQuery(GET_LIST_COUNTRY);
-
   const { data, loading, error } = useQuery(GET_LIST_COUNTRY);
 
   return (
     <>
       {loading && <p>Cargando...</p>}
-      {/* {error && <p>Error : {error.message}</p>} */}
       {(data && countryList.length == 0) &&
         (
-          <div className="row g-0">
+          <div className="row g-0" style={{ height: '80vh' }}>
             <div className="col-sm" style={{ backgroundColor: "#E3F4FF", paddingLeft: '2rem' }}>
               <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', rowGap: '2rem' }}>
                 {
@@ -96,7 +92,7 @@ function ListCountry({ countryList }) {
 
       {(countryList.length > 0) &&
         (
-          <div className="row g-0">
+          <div className="row g-0" style={{ height: '80vh' }}>
             <div className="col-sm" style={{ backgroundColor: "#E3F4FF", paddingLeft: '2rem' }}>
               <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', rowGap: '2rem' }}>
                 {
