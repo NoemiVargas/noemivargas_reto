@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../css/InfoCard.css";
 import { useQuery, useLazyQuery, gql } from "@apollo/client";
+import { MDBBtn } from "mdb-react-ui-kit";
 
 const GET_COUNTRY = gql`
 query findCountryByCode($codeToSearch: ID! ){
@@ -19,7 +20,7 @@ function InfoCard({ country }) {
   const listLanguage = country.languages.map((item, index) => { return item.name });
 
   return (
-    <div>
+    <>
       <div className="card InfoBody" style={{ borderRadius: '0rem' }}>
         <div className="card-body">
           <div className="">
@@ -88,7 +89,7 @@ function InfoCard({ country }) {
                 {
                   country.states.map(
                     ({ name }, index) => (
-                      <li>{name}</li>
+                      <li key={index}>{name}</li>
 
 
                     )
@@ -103,7 +104,7 @@ function InfoCard({ country }) {
         </div>
 
       </div>
-    </div>
+    </>
   );
 }
 

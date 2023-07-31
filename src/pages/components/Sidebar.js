@@ -59,9 +59,9 @@ function Sidebar() {
 
                 <ul className="nav flex-column" style={{ paddingBottom: '1rem' }}>
                     {
-                        menus.map((item) => (
-                            <li className="item_link">
-                                <NavLink to={item.link} caseSensitives className={({ isActive }) => (isActive ? 'nav-item-selected' : 'nav-link nav-item-normal')}>
+                        menus.map((item, index) => (
+                            <li className="item_link" key={index}>
+                                <NavLink to={item.link} caseSensitive className={({ isActive }) => (isActive ? 'nav-item-selected' : 'nav-link nav-item-normal')}>
                                     {item.name}
                                 </NavLink>
 

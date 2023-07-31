@@ -1,0 +1,8 @@
+@media(max-width: 700px) {
+    #collapseDetalle .InfoBody {
+        height: 400px;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+    }
+}
