@@ -47,7 +47,6 @@ function Paises() {
         { called: calledGetCountry, loading: loadingGetCountry, data: dataCountry }] = useLazyQuery(GET_COUNTRY);
     const showCountry = (code) => {
         getCountry({ variables: { codeToSearch: code } });
-        console.log("showCountry", code)
     };
 
     // Para listado de paises de la barra de busqueda
@@ -67,7 +66,6 @@ function Paises() {
     };
 
     useEffect(() => {
-        console.log("countries: ", countries)
         window.addEventListener('resize', handleWindowResize);
 
         return () => {
@@ -136,7 +134,7 @@ function Paises() {
                 (
                     <div className="row">
                         <div className={"d-sm-flex flex-sm-column d-md-flex flex-md-row flex-md-wrap justify-content-md-around " + ((isActiveDetail) ? "col-md-9" : "col-md-12")}
-                            style={{ backgroundColor: '#E3F4FF', rowGap: '1rem', minHeight: '100vh' }}>
+                            style={{ backgroundColor: '#E3F4FF', rowGap: '1rem', minHeight: '80vh' }}>
                             {
                                 countries.map(
                                     ({ code, name, continent: { name: continentName } }, index) => (

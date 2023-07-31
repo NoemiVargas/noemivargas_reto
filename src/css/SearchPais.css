@@ -1,0 +1,9 @@
+
+.itemContinent{
+
+}
+
+.itemContinent-active img{
+    box-shadow: 2px 2px 20px #2D8FD2;
+    border: 2px solid #2D8FD2;
+}
