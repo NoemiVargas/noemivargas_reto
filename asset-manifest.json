@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/noemivargas_reto/static/css/main.f7ee9137.css",
-    "main.js": "/noemivargas_reto/static/js/main.b8bcf14b.js",
-    "static/js/787.aa49c090.chunk.js": "/noemivargas_reto/static/js/787.aa49c090.chunk.js",
-    "static/media/fa-solid-900.ttf": "/noemivargas_reto/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
-    "static/media/fa-brands-400.ttf": "/noemivargas_reto/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
-    "static/media/fa-solid-900.woff2": "/noemivargas_reto/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
-    "static/media/fa-brands-400.woff2": "/noemivargas_reto/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
-    "static/media/uni-neue-bold.otf": "/noemivargas_reto/static/media/uni-neue-bold.0adb4fc9be3232aafd55.otf",
-    "static/media/fa-regular-400.ttf": "/noemivargas_reto/static/media/fa-regular-400.d87474231f4192884802.ttf",
-    "static/media/fa-regular-400.woff2": "/noemivargas_reto/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
-    "static/media/fa-v4compatibility.ttf": "/noemivargas_reto/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
-    "static/media/fa-v4compatibility.woff2": "/noemivargas_reto/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
-    "index.html": "/noemivargas_reto/index.html",
-    "main.f7ee9137.css.map": "/noemivargas_reto/static/css/main.f7ee9137.css.map",
-    "main.b8bcf14b.js.map": "/noemivargas_reto/static/js/main.b8bcf14b.js.map",
-    "787.aa49c090.chunk.js.map": "/noemivargas_reto/static/js/787.aa49c090.chunk.js.map"
+    "main.css": "/static/css/main.20ab4eca.css",
+    "main.js": "/static/js/main.032a55c1.js",
+    "static/js/787.aa49c090.chunk.js": "/static/js/787.aa49c090.chunk.js",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/uni-neue-bold.otf": "/static/media/uni-neue-bold.0adb4fc9be3232aafd55.otf",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/index.html",
+    "main.20ab4eca.css.map": "/static/css/main.20ab4eca.css.map",
+    "main.032a55c1.js.map": "/static/js/main.032a55c1.js.map",
+    "787.aa49c090.chunk.js.map": "/static/js/787.aa49c090.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7ee9137.css",
-    "static/js/main.b8bcf14b.js"
+    "static/css/main.20ab4eca.css",
+    "static/js/main.032a55c1.js"
   ]
 }
