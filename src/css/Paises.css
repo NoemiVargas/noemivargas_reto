@@ -1,8 +1,9 @@
+/*--SCROLL DetallePais*/
+
 @media(max-width: 700px) {
-    #collapseDetalle .InfoBody {
-        height: 400px;
+    #collapseDetalle .InfoBody{
+        height: 200px;
         overflow-x: hidden;
         overflow-y: auto;
-
     }
 }

@@ -20,7 +20,7 @@ function SideNav() {
             fontWeight: "bold",
           }}
         >
-          Logo
+          LogoReto
         </span>
 
         <ul className="nav flex-column mb-auto">

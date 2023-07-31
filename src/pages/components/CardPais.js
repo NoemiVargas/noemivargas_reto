@@ -17,6 +17,7 @@ function CardPais({ onClick, countryCode, countryName, continentName, selectedDe
           boxShadow: "-1px -3px 9px rgba(0,0,0,0.8)",
         }}
       >
+        
         <div
           className="hover-overlay ripple" data-mdb-ripple-color="light">
           <img

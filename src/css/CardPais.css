@@ -2,11 +2,9 @@
   font-weight: bold;
   color: #23A9FF;
 }
-
 .secondary-title {
   color: #7A7A7A;
 }
-
 
 .eachCard{
   width: 32%;
@@ -33,24 +31,16 @@
   }
 }
 
+/*---*/
+/*-----------------*/
 
-
-/* @media(max-width: 880px) {
-  .eachCard {
-    width: 85% !important;
+@media only screen and (max-width: 820px) and (min-width: 767px) {
+  .principal-title {
+    font-size: small;
   }
+  .continent-title{
+    font-size: small;
+  }
+
 }
 
-@media(max-width: 705px) {
-  .eachCard {
-    width: 77% !important;
-  }
-} */
-
-/*
-
-  @media(max-width: 280px) {
-    .bandera img{
-      width: 40% !important;
-  }
-  } */

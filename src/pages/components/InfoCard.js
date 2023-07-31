@@ -21,7 +21,7 @@ function InfoCard({ country }) {
 
   return (
     <>
-      <div className="card InfoBody" style={{ borderRadius: '0rem' }}>
+      <div className="card InfoBody" style={{ borderRadius: '0rem', marginTop:'5px' }}>
         <div className="card-body">
           <div className="">
             <div
